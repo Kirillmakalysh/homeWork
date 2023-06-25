@@ -52,23 +52,42 @@
 
 // Задача 4: Напишите программу, 
 // которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+// Console.Write("Введите число №1: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число №2: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число №3: ");
+// int num3 = Convert.ToInt32(Console.ReadLine());
+// int numMax;
+// if(num1 > num2)
+// {
+//     numMax = num1;
+// }
+// else
+// {
+//     numMax = num2;
+// }
+// if(numMax < num3)
+// {
+//     numMax = num3;
+// }
+// Console.WriteLine("Максимально число из данных - " + numMax);
+
+
+
+// Задача 6: Напишите программу,
+//  которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
 Console.Write("Введите число №1: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число №2: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число №3: ");
-int num3 = Convert.ToInt32(Console.ReadLine());
-int numMax;
-if(num1 > num2)
+int num2;
+num2 = num1 % 2;
+if(num2 > 0)
 {
-    numMax = num1;
+    Console.WriteLine("Введеное число нечетное");
 }
 else
 {
-    numMax = num2;
+     Console.WriteLine("Введеное число четное");
 }
-if(numMax < num3)
-{
-    numMax = num3;
-}
-Console.WriteLine("Максимально число из данных - " + numMax);
+
